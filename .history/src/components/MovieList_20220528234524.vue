@@ -1,17 +1,14 @@
 <template>
-
    <div class="d-flex flex-wrap"> 
     <div id="movielist" v-for="movie in movielist" :key="movie.id">
       <div  @click="goDetail(movie.id)">
-      <b-img :src='`https://image.tmdb.org/t/p/original/${movie.poster_path}`' style="width:125px; height:180px"
-       ></b-img>
+      <b-img :src='`https://image.tmdb.org/t/p/original/${movie.poster_path}`' style="width:125px; height:190;"></b-img>
       <p>{{movie.id}}</p>
      <p>{{movie.title}}</p>
       <p>{{movie.release_date.split("-")[0]}}</p>
       </div>
     </div>
   </div>
-  
 </template>
 <script>
 
@@ -39,5 +36,6 @@ export default{
 #movielist{
   
   margin: 10px
+  
 }
 </style>

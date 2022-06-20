@@ -1,9 +1,8 @@
 <template>
-
    <div class="d-flex flex-wrap"> 
     <div id="movielist" v-for="movie in movielist" :key="movie.id">
       <div  @click="goDetail(movie.id)">
-      <b-img :src='`https://image.tmdb.org/t/p/original/${movie.poster_path}`' style="width:125px; height:180px"
+      <b-img :src='`https://image.tmdb.org/t/p/original/${movie.poster_path}`' style="width:125px; height:190;  opacity: 0.9;;"
        ></b-img>
       <p>{{movie.id}}</p>
      <p>{{movie.title}}</p>
@@ -11,7 +10,6 @@
       </div>
     </div>
   </div>
-  
 </template>
 <script>
 

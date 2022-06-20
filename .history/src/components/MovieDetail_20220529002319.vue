@@ -69,12 +69,10 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 1;
+   background-image:rgba( 255, 255, 255, 0.5 );
 }
 
 
-.movieimg{
-  opacity: 0.9;
-}
 * {
   padding:0;
   margin : 0;

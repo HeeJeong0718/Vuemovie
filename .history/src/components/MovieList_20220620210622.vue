@@ -1,5 +1,5 @@
 <template>
-
+<div>
    <div class="d-flex flex-wrap"> 
     <div id="movielist" v-for="movie in movielist" :key="movie.id">
       <div  @click="goDetail(movie.id)">
@@ -11,7 +11,7 @@
       </div>
     </div>
   </div>
-  
+  </div>
 </template>
 <script>
 

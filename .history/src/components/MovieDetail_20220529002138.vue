@@ -64,6 +64,7 @@ export default {
 #movie-detail-image{
  background-size: cover;
    height: auto;
+   position: relative;
   top: 0;
   left: 0;
   right: 0;

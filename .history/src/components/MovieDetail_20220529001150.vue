@@ -1,5 +1,6 @@
 <template>
   <div id="movie-detail-image"  :style="{'backgroundImage': 'url(https://image.tmdb.org/t/p/original/'+`${movieDetail.poster_path}`+')'  }">
+   <div>
       <div class="d-flex">
         <b-img :src='`https://image.tmdb.org/t/p/original/${movieDetail.poster_path}`' style="height:80vh;" class="mt-2" ></b-img>
         <div class="ml-4 w-75 mt-3">
@@ -23,7 +24,7 @@
        </div>   
          </div>
        </div>  
-  
+    </div>
 </div>
 </template>
 
@@ -68,10 +69,9 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
+
 }
-
-
 .movieimg{
   opacity: 0.9;
 }

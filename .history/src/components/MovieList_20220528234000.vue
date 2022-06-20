@@ -1,5 +1,4 @@
 <template>
-
    <div class="d-flex flex-wrap"> 
     <div id="movielist" v-for="movie in movielist" :key="movie.id">
       <div  @click="goDetail(movie.id)">
@@ -7,11 +6,10 @@
        ></b-img>
       <p>{{movie.id}}</p>
      <p>{{movie.title}}</p>
-      <p>{{movie.release_date.split("-")[0]}}</p>
+      <p>{{movie.release_date}}</p>
       </div>
     </div>
   </div>
-  
 </template>
 <script>
 

@@ -1,11 +1,11 @@
 <template>
-  <div id="movie-detail-image"  :style="{'backgroundImage': 'url(https://image.tmdb.org/t/p/original/'+`${movieDetail.poster_path}`+')'  }">
+    <div class="movie-detail-image" :style="{ 'backgroundImage': 'url(https://image.tmdb.org/t/p/original/'+`${movieDetail.poster_path}`+')' }">
       <div class="d-flex">
         <b-img :src='`https://image.tmdb.org/t/p/original/${movieDetail.poster_path}`' style="height:80vh;" class="mt-2" ></b-img>
         <div class="ml-4 w-75 mt-3">
         <h2>{{movieDetail.title}}</h2>
         <div class="mt-4">
-        <p class="overview">{{movieDetail.overview}}</p>
+        <p>{{movieDetail.overview}}</p>
         </div> 
          <p>{{movieDetail.release_date.split("-")[0]}} ㆍ {{movieDetail.vote_average}}  ㆍ{{movieDetail.runtime}}분</p>
         
@@ -23,8 +23,7 @@
        </div>   
          </div>
        </div>  
-  
-</div>
+    </div>
 </template>
 
 <script>
@@ -63,17 +62,15 @@ export default {
 <style scoped>
 #movie-detail-image{
  background-size: cover;
-   height: auto;
+   height: 100vh;
+  position: fixed;
+  opacity: 0.8;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
-}
-
-
-.movieimg{
-  opacity: 0.9;
+  z-index: 0;
+  
 }
 * {
   padding:0;
@@ -82,9 +79,5 @@ export default {
 .genre {
   display: flex;
   align-items: center;
-}
-.overview{
-  font-weight: bold;
-  color:white;
 }
 </style>

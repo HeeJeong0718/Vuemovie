@@ -64,13 +64,18 @@ export default {
 #movie-detail-image{
  background-size: cover;
    height: auto;
+   position: relative;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
 }
-
+#movie-detail-image::after{
+ 
+   z-index: -1;
+   opacity: 0.9;
+}
 
 .movieimg{
   opacity: 0.9;

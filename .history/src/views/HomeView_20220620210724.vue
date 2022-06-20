@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <MovieSearch></MovieSearch>
-    <MovieMain></MovieMain>
+    <MovieMain/>
     
   </div>
 </template>

@@ -1,19 +1,19 @@
 <template>
   <div class="home">
     <MovieSearch></MovieSearch>
-    <MovieMain></MovieMain>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
     
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import MovieMain from '@/components/MovieMain.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 import MovieSearch from '@/components/MovieSearch.vue'
 export default {
   name: 'HomeView',
   components: {
-    MovieMain,
+    HelloWorld,
     MovieSearch
   },
 

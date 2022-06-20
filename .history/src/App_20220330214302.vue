@@ -4,8 +4,8 @@
       <div class="clock">
     <p>현재시간:{{now}}</p>
     </div>
-      <router-link to="/">Home</router-link> 
-      
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
   </div>

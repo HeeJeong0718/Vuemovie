@@ -69,6 +69,7 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 1;
+   background-image: rgba( 255, 0.5, 0.5, 0.5 );
 }
 
 
